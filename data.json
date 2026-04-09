@@ -1,0 +1,162 @@
+[
+  {
+    "id": "q1",
+    "pitanje": "Što je proces?",
+    "odgovor": "Skup međusobno povezanih aktivnosti koje pretvaraju resurse u uslužne proizvode."
+  },
+  {
+    "id": "q2",
+    "pitanje": "Što je procesni pristup?",
+    "odgovor": "Način upravljanja organizacijom kroz identificiranje, razumijevanje i upravljanje procesima radi postizanja ciljeva."
+  },
+  {
+    "id": "q3",
+    "pitanje": "Što je aktivnost i koje su karakteristike?",
+    "odgovor": "Aktivnost je pojedinačni zadatak ili radnja unutar procesa. Karakteristike: ima jasan cilj, koristi resurse, ima ulaz i izlaz, traje određeno vrijeme, može se mjeriti."
+  },
+  {
+    "id": "q4",
+    "pitanje": "Što je funkcija?",
+    "odgovor": "Skup aktivnosti koje imaju zajedničku svrhu u organizaciji (npr. marketing, proizvodnja)."
+  },
+  {
+    "id": "q5",
+    "pitanje": "Organizacija funkcije kao: grupe, tima, odjela, sektora.",
+    "odgovor": "Grupe: manja organizacijska jedinica sastavljena od nekoliko ljudi koji obavljaju slične zadatke. Tima: skup ljudi koji zajednički rade na postizanju određenog cilja, uz međusobnu suradnju i podjelu odgovornosti. Odjela: veća organizacijska jedinica unutar poduzeća koja obuhvaća više grupa ili timova i ima jasno definirane zadatke. Sektora: najveća funkcijska organizacijska jedinica koja obuhvaća više odjela i upravlja širim područjem poslovanja."
+  },
+  {
+    "id": "q6",
+    "pitanje": "Poslovni sustav",
+    "odgovor": "Organizirana cjelina ljudi, resursa i procesa koji zajedno rade zbog ostvarivanja poslovnih ciljeva."
+  },
+  {
+    "id": "q7",
+    "pitanje": "Primjer organizacije funkcije u poduzeću (npr. marketing funkcija):",
+    "odgovor": "Grupa: tim za društvene mreže. Tim: tim za digitalni marketing. Odjel: odjel marketinga. Sektor: sektor prodaje i marketinga."
+  },
+  {
+    "id": "q8",
+    "pitanje": "Razine donošenja odluka",
+    "odgovor": "Operativna razina: odnosi se na svakodnevne, rutinske odluke (npr. obrada narudžbi). Donose ih niže razine menadžmenta. Taktička razina: srednjoročne odluke vezane uz planiranje i kontrolu (npr. budžeti, plan prodaje). Donosi srednji menadžment. Strateška razina: dugoročne odluke važne za cijelo poduzeće (npr. ulazak na novo tržište). Donosi vrhovni menadžment."
+  },
+  {
+    "id": "q9",
+    "pitanje": "Vrste odlučivanja",
+    "odgovor": "Strukturirano odlučivanje: temelji se na pravilima i procedurama, ponavlja se (npr. obračun plaće). Nestrukturirano odlučivanje: nema jasnih pravila, zahtijeva iskustvo i procjenu (npr. strategija razvoja). Polustrukturirano odlučivanje: kombinacija prethodna dva (npr. planiranje prodaje)."
+  },
+  {
+    "id": "q10",
+    "pitanje": "Objasnite pojam „poslovna funkcija” i podjelu poslovnih funkcija",
+    "odgovor": "Poslovna funkcija je skup povezanih aktivnosti u poduzeću koje imaju zajednički cilj. Dijele se na: nabavu, proizvodnju, prodaju, marketing, financije, ljudske resurse i IT."
+  },
+  {
+    "id": "q11",
+    "pitanje": "Ključne poslovne funkcije i odnosi (faze poslovnog ciklusa poduzeća)",
+    "odgovor": "Funkcije prate tijek poslovanja i povezane su međusobno: Nabava osigurava sirovine. Proizvodnja pretvara ih u proizvode. Prodaja prodaje proizvode. Logistika upravlja distribucijom. Financije prate novčane tokove. Izlaz jedne funkcije postaje ulaz druge."
+  },
+  {
+    "id": "q12",
+    "pitanje": "Trajna poslovna imovina i logistika",
+    "odgovor": "Trajna poslovna imovina: dugotrajna sredstva koja se koriste više godina (npr. zgrade, strojevi). Logistika: upravljanje protokom robe, informacija i resursa od nabave do kupca."
+  },
+  {
+    "id": "q13",
+    "pitanje": "Što je Integralni informacijski sustav?",
+    "odgovor": "Sustav koji povezuje sve poslovne funkcije u jednu cjelinu i omogućuje razmjenu podataka u realnom vremenu."
+  },
+  {
+    "id": "q14",
+    "pitanje": "Što je ERP / CRM / BI i osnovna obilježja i izazovi?",
+    "odgovor": "ERP: sustav za upravljanje resursima poduzeća. CRM: upravljanje odnosima s kupcima. BI: analiza podataka za donošenje odluka. Obilježja: integracija podataka, automatizacija procesa, centralizirana baza. Izazovi: visoki troškovi, složena implementacija, potreba za edukacijom zaposlenika."
+  },
+  {
+    "id": "q15",
+    "pitanje": "Objasnite modularni pristup pri arhitekturi i implementaciji ERP sustava.",
+    "odgovor": "ERP sustav se sastoji od modula (npr. financije, HR). Svaki modul pokriva jednu funkciju i može se uvoditi postupno, što olakšava implementaciju."
+  },
+  {
+    "id": "q16",
+    "pitanje": "Objasnite tipične CRM module i tri osnovna tipa CRM sustava",
+    "odgovor": "Moduli: prodaja, marketing, korisnička podrška. Tipovi CRM-a: operativni (rad s kupcima), analitički (analiza podataka), kolaborativni (komunikacija s kupcima)."
+  },
+  {
+    "id": "q17",
+    "pitanje": "Objasnite Insightly / ZOHO / Microsoft pristup CRM-u.",
+    "odgovor": "Insightly: jednostavan i prilagođen malim poduzećima. Zoho: fleksibilan i cjenovno pristupačan. Microsoft Dynamics: napredno rješenje za velike sustave."
+  },
+  {
+    "id": "q18",
+    "pitanje": "Objasnite Izvršni sloj informacijskog sustava.",
+    "odgovor": "To je operativni sloj koji podržava svakodnevne aktivnosti i obradu transakcija (TPS)."
+  },
+  {
+    "id": "q19",
+    "pitanje": "Objasnite pojam i karakteristike transakcije.",
+    "odgovor": "Transakcija je osnovna poslovna operacija (npr. kupnja). Karakteristike: ima početak i kraj, mora biti točna i pouzdana, evidentira se u sustavu."
+  },
+  {
+    "id": "q20",
+    "pitanje": "Objasnite Upravljački / Suradnički sloj informacijskog sustava.",
+    "odgovor": "Upravljački sloj: služi za planiranje, kontrolu i donošenje odluka (MIS). Suradnički sloj: omogućuje komunikaciju i timski rad (npr. e-mail, kolaboracijski alati)."
+  },
+  {
+    "id": "q21",
+    "pitanje": "Na praktičnom IT primjeru prikažite proces donošenja odluka",
+    "odgovor": "Primjer: web trgovina. TPS bilježi narudžbe. MIS generira izvještaje o prodaji. DSS analizira trendove. Menadžment odlučuje koje proizvode promovirati."
+  },
+  {
+    "id": "q22",
+    "pitanje": "Navedite i objasnite informacijske sustave potpore upravljanju i odlučivanju.",
+    "odgovor": "MIS: izvještaji za menadžere. DSS: pomoć pri donošenju odluka. ESS: strateške odluke."
+  },
+  {
+    "id": "q23",
+    "pitanje": "Skicirajte i objasnite odnos informacijskih sustava potpore upravljanju i odlučivanju",
+    "odgovor": "Sustavi su povezani hijerarhijski: TPS → MIS → DSS → ESS. Podaci se prenose s niže na višu razinu."
+  },
+  {
+    "id": "q24",
+    "pitanje": "Objasnite TPS / MIS / DSS / ESS",
+    "odgovor": "TPS: obrada transakcija. MIS: upravljački izvještaji. DSS: podrška odlučivanju. ESS: podrška vrhovnom menadžmentu."
+  },
+  {
+    "id": "q25",
+    "pitanje": "Navedite i objasnite informacijske sustave automatizacije i znanja",
+    "odgovor": "To su sustavi koji pomažu radu i učenju: uredski sustavi, ekspertni sustavi, AI sustavi."
+  },
+  {
+    "id": "q26",
+    "pitanje": "Skicirajte međusobni odnos informacijskih sustava",
+    "odgovor": "Svi sustavi su povezani i razmjenjuju podatke; operativni sustavi opskrbljuju upravljačke i strateške."
+  },
+  {
+    "id": "q27",
+    "pitanje": "Objasnite faze životnog ciklusa poslovnog informacijskog sustava",
+    "odgovor": "1) Planiranje 2) Analiza 3) Dizajn 4) Implementacija 5) Održavanje"
+  },
+  {
+    "id": "q28",
+    "pitanje": "Krivulja životnog ciklusa IS-a.",
+    "odgovor": "Uvođenje (početak): sustav se razvija i uvodi u rad; troškovi su visoki, a koristi još male. Rast: korisnici sve više koriste sustav, učinkovitost raste, a koristi postaju vidljive; sustav se stabilizira i ispravlja se početne greške. Zrelost (vrhunac): sustav radi optimalno i daje najveću vrijednost; procesi su uhodani, a performanse stabilne. Pad (zastarijevanje): tehnologija zastarijeva; pojavljuju se novi zahtjevi i problemi; sustav postaje manje učinkovit i skuplji za održavanje."
+  },
+  {
+    "id": "q29",
+    "pitanje": "Što predstavlja točka infleksije?",
+    "odgovor": "To je trenutak kada sustav počinje gubiti učinkovitost i potrebno ga je nadograditi ili zamijeniti."
+  },
+  {
+    "id": "q30",
+    "pitanje": "Hijerarhijska struktura poslovnog informacijskog sustava.",
+    "odgovor": "IS je organiziran hijerarhijski: sustav, podsustavi, moduli, komponente."
+  },
+  {
+    "id": "q31",
+    "pitanje": "Objasnite pojam Informacijski podsustav.",
+    "odgovor": "To je dio informacijskog sustava koji pokriva jednu poslovnu funkciju (npr. financijski podsustav)."
+  },
+  {
+    "id": "q32",
+    "pitanje": "Navedite i objasnite standardne informacijske podsustave.",
+    "odgovor": "Financijski podsustav: prati financijsko poslovanje (prihode, rashode, troškove, obračun plaća i izradu financijskih izvještaja) i omogućuje kontrolu i planiranje financija. Kadrovski (HR) podsustav: upravlja zaposlenicima (evidencija zaposlenih, zapošljavanje, obračun plaća, edukacija i razvoj kadrova). Nabavni podsustav: podržava nabavu (odabir dobavljača, naručivanje robe, praćenje isporuka) i osigurava dostupnost resursa. Proizvodni podsustav: planira i prati proizvodnju (materijali, radni nalozi, procesi). Prodajni podsustav: upravlja prodajom (zaprimanje narudžbi, izdavanje računa, praćenje kupaca i rezultata). Skladišno logistički podsustav: prati zalihe, skladištenje i distribuciju te osigurava pravovremenu isporuku. Marketinški podsustav: istraživanje tržišta, promocije, analiza kupaca i planiranje kampanja."
+  }
+]

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIS Library</title>
+    <meta name="description" content="PIS Library — pitanja i odgovori s pretragom i praćenjem napretka." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar" role="banner">
+      <div class="topbar__inner">
+        <div class="topbar__side" aria-hidden="true"></div>
+
+        <div class="topbar__titleWrap">
+          <h1 class="topbar__title">PIS Library</h1>
+        </div>
+
+        <div class="topbar__searchWrap">
+          <label class="sr-only" for="searchInput">Pretraži pitanja i odgovore</label>
+          <input
+            id="searchInput"
+            class="search"
+            type="search"
+            inputmode="search"
+            autocomplete="off"
+            placeholder="Pretraži (pitanje ili odgovor)…"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="page" role="main">
+      <div class="container">
+        <div class="meta">
+          <div class="meta__left">
+            <span id="resultsCount" class="meta__count" aria-live="polite"></span>
+          </div>
+          <div class="meta__right">
+            <button id="clearAllBtn" class="btn btn--ghost" type="button" title="Obriši spremljeno stanje">
+              Reset stanja
+            </button>
+          </div>
+        </div>
+
+        <div id="emptyState" class="empty" hidden>
+          <div class="empty__card">
+            <div class="empty__title">Nema rezultata</div>
+            <div id="emptyStateSubtitle" class="empty__subtitle"></div>
+          </div>
+        </div>
+
+        <section id="cards" class="cards" aria-label="Pitanja i odgovori"></section>
+      </div>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
