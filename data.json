@@ -1,162 +1,419 @@
-[
-  {
-    "id": "q1",
-    "pitanje": "Što je proces?",
-    "odgovor": "Skup međusobno povezanih aktivnosti koje pretvaraju resurse u uslužne proizvode."
-  },
-  {
-    "id": "q2",
-    "pitanje": "Što je procesni pristup?",
-    "odgovor": "Način upravljanja organizacijom kroz identificiranje, razumijevanje i upravljanje procesima radi postizanja ciljeva."
-  },
-  {
-    "id": "q3",
-    "pitanje": "Što je aktivnost i koje su karakteristike?",
-    "odgovor": "Aktivnost je pojedinačni zadatak ili radnja unutar procesa. Karakteristike: ima jasan cilj, koristi resurse, ima ulaz i izlaz, traje određeno vrijeme, može se mjeriti."
-  },
-  {
-    "id": "q4",
-    "pitanje": "Što je funkcija?",
-    "odgovor": "Skup aktivnosti koje imaju zajedničku svrhu u organizaciji (npr. marketing, proizvodnja)."
-  },
-  {
-    "id": "q5",
-    "pitanje": "Organizacija funkcije kao: grupe, tima, odjela, sektora.",
-    "odgovor": "Grupe: manja organizacijska jedinica sastavljena od nekoliko ljudi koji obavljaju slične zadatke. Tima: skup ljudi koji zajednički rade na postizanju određenog cilja, uz međusobnu suradnju i podjelu odgovornosti. Odjela: veća organizacijska jedinica unutar poduzeća koja obuhvaća više grupa ili timova i ima jasno definirane zadatke. Sektora: najveća funkcijska organizacijska jedinica koja obuhvaća više odjela i upravlja širim područjem poslovanja."
-  },
-  {
-    "id": "q6",
-    "pitanje": "Poslovni sustav",
-    "odgovor": "Organizirana cjelina ljudi, resursa i procesa koji zajedno rade zbog ostvarivanja poslovnih ciljeva."
-  },
-  {
-    "id": "q7",
-    "pitanje": "Primjer organizacije funkcije u poduzeću (npr. marketing funkcija):",
-    "odgovor": "Grupa: tim za društvene mreže. Tim: tim za digitalni marketing. Odjel: odjel marketinga. Sektor: sektor prodaje i marketinga."
-  },
-  {
-    "id": "q8",
-    "pitanje": "Razine donošenja odluka",
-    "odgovor": "Operativna razina: odnosi se na svakodnevne, rutinske odluke (npr. obrada narudžbi). Donose ih niže razine menadžmenta. Taktička razina: srednjoročne odluke vezane uz planiranje i kontrolu (npr. budžeti, plan prodaje). Donosi srednji menadžment. Strateška razina: dugoročne odluke važne za cijelo poduzeće (npr. ulazak na novo tržište). Donosi vrhovni menadžment."
-  },
-  {
-    "id": "q9",
-    "pitanje": "Vrste odlučivanja",
-    "odgovor": "Strukturirano odlučivanje: temelji se na pravilima i procedurama, ponavlja se (npr. obračun plaće). Nestrukturirano odlučivanje: nema jasnih pravila, zahtijeva iskustvo i procjenu (npr. strategija razvoja). Polustrukturirano odlučivanje: kombinacija prethodna dva (npr. planiranje prodaje)."
-  },
-  {
-    "id": "q10",
-    "pitanje": "Objasnite pojam „poslovna funkcija” i podjelu poslovnih funkcija",
-    "odgovor": "Poslovna funkcija je skup povezanih aktivnosti u poduzeću koje imaju zajednički cilj. Dijele se na: nabavu, proizvodnju, prodaju, marketing, financije, ljudske resurse i IT."
-  },
-  {
-    "id": "q11",
-    "pitanje": "Ključne poslovne funkcije i odnosi (faze poslovnog ciklusa poduzeća)",
-    "odgovor": "Funkcije prate tijek poslovanja i povezane su međusobno: Nabava osigurava sirovine. Proizvodnja pretvara ih u proizvode. Prodaja prodaje proizvode. Logistika upravlja distribucijom. Financije prate novčane tokove. Izlaz jedne funkcije postaje ulaz druge."
-  },
-  {
-    "id": "q12",
-    "pitanje": "Trajna poslovna imovina i logistika",
-    "odgovor": "Trajna poslovna imovina: dugotrajna sredstva koja se koriste više godina (npr. zgrade, strojevi). Logistika: upravljanje protokom robe, informacija i resursa od nabave do kupca."
-  },
-  {
-    "id": "q13",
-    "pitanje": "Što je Integralni informacijski sustav?",
-    "odgovor": "Sustav koji povezuje sve poslovne funkcije u jednu cjelinu i omogućuje razmjenu podataka u realnom vremenu."
-  },
-  {
-    "id": "q14",
-    "pitanje": "Što je ERP / CRM / BI i osnovna obilježja i izazovi?",
-    "odgovor": "ERP: sustav za upravljanje resursima poduzeća. CRM: upravljanje odnosima s kupcima. BI: analiza podataka za donošenje odluka. Obilježja: integracija podataka, automatizacija procesa, centralizirana baza. Izazovi: visoki troškovi, složena implementacija, potreba za edukacijom zaposlenika."
-  },
-  {
-    "id": "q15",
-    "pitanje": "Objasnite modularni pristup pri arhitekturi i implementaciji ERP sustava.",
-    "odgovor": "ERP sustav se sastoji od modula (npr. financije, HR). Svaki modul pokriva jednu funkciju i može se uvoditi postupno, što olakšava implementaciju."
-  },
-  {
-    "id": "q16",
-    "pitanje": "Objasnite tipične CRM module i tri osnovna tipa CRM sustava",
-    "odgovor": "Moduli: prodaja, marketing, korisnička podrška. Tipovi CRM-a: operativni (rad s kupcima), analitički (analiza podataka), kolaborativni (komunikacija s kupcima)."
-  },
-  {
-    "id": "q17",
-    "pitanje": "Objasnite Insightly / ZOHO / Microsoft pristup CRM-u.",
-    "odgovor": "Insightly: jednostavan i prilagođen malim poduzećima. Zoho: fleksibilan i cjenovno pristupačan. Microsoft Dynamics: napredno rješenje za velike sustave."
-  },
-  {
-    "id": "q18",
-    "pitanje": "Objasnite Izvršni sloj informacijskog sustava.",
-    "odgovor": "To je operativni sloj koji podržava svakodnevne aktivnosti i obradu transakcija (TPS)."
-  },
-  {
-    "id": "q19",
-    "pitanje": "Objasnite pojam i karakteristike transakcije.",
-    "odgovor": "Transakcija je osnovna poslovna operacija (npr. kupnja). Karakteristike: ima početak i kraj, mora biti točna i pouzdana, evidentira se u sustavu."
-  },
-  {
-    "id": "q20",
-    "pitanje": "Objasnite Upravljački / Suradnički sloj informacijskog sustava.",
-    "odgovor": "Upravljački sloj: služi za planiranje, kontrolu i donošenje odluka (MIS). Suradnički sloj: omogućuje komunikaciju i timski rad (npr. e-mail, kolaboracijski alati)."
-  },
-  {
-    "id": "q21",
-    "pitanje": "Na praktičnom IT primjeru prikažite proces donošenja odluka",
-    "odgovor": "Primjer: web trgovina. TPS bilježi narudžbe. MIS generira izvještaje o prodaji. DSS analizira trendove. Menadžment odlučuje koje proizvode promovirati."
-  },
-  {
-    "id": "q22",
-    "pitanje": "Navedite i objasnite informacijske sustave potpore upravljanju i odlučivanju.",
-    "odgovor": "MIS: izvještaji za menadžere. DSS: pomoć pri donošenju odluka. ESS: strateške odluke."
-  },
-  {
-    "id": "q23",
-    "pitanje": "Skicirajte i objasnite odnos informacijskih sustava potpore upravljanju i odlučivanju",
-    "odgovor": "Sustavi su povezani hijerarhijski: TPS → MIS → DSS → ESS. Podaci se prenose s niže na višu razinu."
-  },
-  {
-    "id": "q24",
-    "pitanje": "Objasnite TPS / MIS / DSS / ESS",
-    "odgovor": "TPS: obrada transakcija. MIS: upravljački izvještaji. DSS: podrška odlučivanju. ESS: podrška vrhovnom menadžmentu."
-  },
-  {
-    "id": "q25",
-    "pitanje": "Navedite i objasnite informacijske sustave automatizacije i znanja",
-    "odgovor": "To su sustavi koji pomažu radu i učenju: uredski sustavi, ekspertni sustavi, AI sustavi."
-  },
-  {
-    "id": "q26",
-    "pitanje": "Skicirajte međusobni odnos informacijskih sustava",
-    "odgovor": "Svi sustavi su povezani i razmjenjuju podatke; operativni sustavi opskrbljuju upravljačke i strateške."
-  },
-  {
-    "id": "q27",
-    "pitanje": "Objasnite faze životnog ciklusa poslovnog informacijskog sustava",
-    "odgovor": "1) Planiranje 2) Analiza 3) Dizajn 4) Implementacija 5) Održavanje"
-  },
-  {
-    "id": "q28",
-    "pitanje": "Krivulja životnog ciklusa IS-a.",
-    "odgovor": "Uvođenje (početak): sustav se razvija i uvodi u rad; troškovi su visoki, a koristi još male. Rast: korisnici sve više koriste sustav, učinkovitost raste, a koristi postaju vidljive; sustav se stabilizira i ispravlja se početne greške. Zrelost (vrhunac): sustav radi optimalno i daje najveću vrijednost; procesi su uhodani, a performanse stabilne. Pad (zastarijevanje): tehnologija zastarijeva; pojavljuju se novi zahtjevi i problemi; sustav postaje manje učinkovit i skuplji za održavanje."
-  },
-  {
-    "id": "q29",
-    "pitanje": "Što predstavlja točka infleksije?",
-    "odgovor": "To je trenutak kada sustav počinje gubiti učinkovitost i potrebno ga je nadograditi ili zamijeniti."
-  },
-  {
-    "id": "q30",
-    "pitanje": "Hijerarhijska struktura poslovnog informacijskog sustava.",
-    "odgovor": "IS je organiziran hijerarhijski: sustav, podsustavi, moduli, komponente."
-  },
-  {
-    "id": "q31",
-    "pitanje": "Objasnite pojam Informacijski podsustav.",
-    "odgovor": "To je dio informacijskog sustava koji pokriva jednu poslovnu funkciju (npr. financijski podsustav)."
-  },
-  {
-    "id": "q32",
-    "pitanje": "Navedite i objasnite standardne informacijske podsustave.",
-    "odgovor": "Financijski podsustav: prati financijsko poslovanje (prihode, rashode, troškove, obračun plaća i izradu financijskih izvještaja) i omogućuje kontrolu i planiranje financija. Kadrovski (HR) podsustav: upravlja zaposlenicima (evidencija zaposlenih, zapošljavanje, obračun plaća, edukacija i razvoj kadrova). Nabavni podsustav: podržava nabavu (odabir dobavljača, naručivanje robe, praćenje isporuka) i osigurava dostupnost resursa. Proizvodni podsustav: planira i prati proizvodnju (materijali, radni nalozi, procesi). Prodajni podsustav: upravlja prodajom (zaprimanje narudžbi, izdavanje računa, praćenje kupaca i rezultata). Skladišno logistički podsustav: prati zalihe, skladištenje i distribuciju te osigurava pravovremenu isporuku. Marketinški podsustav: istraživanje tržišta, promocije, analiza kupaca i planiranje kampanja."
-  }
-]
+{
+  "poglavlja": [
+    {
+      "naslov": "1. O KOLEGIJU UVOD",
+      "stavke": [
+        {
+          "id": "q1",
+          "pitanje": "Što je proces?",
+          "odgovor": "Skup međusobno povezanih aktivnosti koje pretvaraju resurse u uslužne proizvode."
+        },
+        {
+          "id": "q2",
+          "pitanje": "Što je procesni pristup?",
+          "odgovor": "Način upravljanja organizacijom kroz identificiranje, razumijevanje i upravljanje procesima radi postizanja ciljeva."
+        },
+        {
+          "id": "q3",
+          "pitanje": "Što je aktivnost i koje su karakteristike?",
+          "odgovor": "Aktivnost je pojedinačni zadatak ili radnja unutar procesa.\n\nKarakteristike:\n• ima jasan cilj\n• koristi resurse\n• ima ulaz i izlaz\n• traje određeno vrijeme\n• može se mjeriti"
+        },
+        {
+          "id": "q4",
+          "pitanje": "Što je funkcija?",
+          "odgovor": "Skup aktivnosti koje imaju zajedničku svrhu u organizaciji (npr. marketing, proizvodnja)."
+        },
+        {
+          "id": "q5",
+          "pitanje": "Organizacija funkcije kao: grupe, tima, odjela, sektora.",
+          "odgovor": "Grupe:\nManja organizacijska jedinica sastavljena od nekoliko ljudi koji obavljaju slične zadatke.\n\nTima:\nSkup ljudi koji zajednički rade na postizanju određenog cilja, uz međusobnu suradnju i podjelu odgovornosti.\n\nOdjela:\nVeća organizacijska jedinica unutar poduzeća koja obuhvaća više grupa ili timova i ima jasno definirane zadatke.\n\nSektora:\nNajveća funkcijska organizacijska jedinica koja obuhvaća više odjela i upravlja širim područjem poslovanja."
+        },
+        {
+          "id": "q6",
+          "pitanje": "Poslovni sustav",
+          "odgovor": "Organizirana cjelina ljudi, resursa i procesa koji zajedno rade zbog ostvarivanja poslovnih ciljeva."
+        },
+        {
+          "id": "q7",
+          "pitanje": "Primjer organizacije funkcije u poduzeću (npr. marketing funkcija)",
+          "odgovor": "Grupa: tim za društvene mreže\nTim: tim za digitalni marketing\nOdjel: odjel marketinga\nSektor: sektor prodaje i marketinga"
+        }
+      ]
+    },
+    {
+      "naslov": "2. TEMELJNI POJMOVI",
+      "stavke": [
+        {
+          "id": "q8",
+          "pitanje": "Razine donošenja odluka + SKICA",
+          "odgovor": "Operativna razina — odnosi se na svakodnevne, rutinske odluke (npr. obrada narudžbi). Donose ih niže razine menadžmenta.\n\nTaktička razina — srednjoročne odluke vezane uz planiranje i kontrolu (npr. budžeti, plan prodaje). Donosi srednji menadžment.\n\nStrateška razina — dugoročne odluke važne za cijelo poduzeće (npr. ulazak na novo tržište). Donosi vrhovni menadžment.\n\nSkica (piramida razine odluka — od baze prema vrhu):\n\n            ┌─────────────────────┐\n            │     STRATEŠKA       │  vrh\n            └──────────┬──────────┘\n                       │\n            ┌──────────▼──────────┐\n            │     TAKTIČKA        │\n            └──────────┬──────────┘\n                       │\n            ┌──────────▼──────────┐\n            │    OPERATIVNA       │  baza\n            └─────────────────────┘"
+        },
+        {
+          "id": "q9",
+          "pitanje": "Vrste odlučivanja",
+          "odgovor": "Strukturirano odlučivanje — temelji se na pravilima i procedurama, ponavlja se (npr. obračun plaće).\n\nNestrukturirano odlučivanje — nema jasnih pravila, zahtijeva iskustvo i procjenu (npr. strategija razvoja).\n\nPolustrukturirano odlučivanje — kombinacija prethodna dva (npr. planiranje prodaje)."
+        },
+        {
+          "id": "q10",
+          "pitanje": "Objasnite pojam „poslovna funkcija” i podjelu poslovnih funkcija",
+          "odgovor": "Poslovna funkcija je skup povezanih aktivnosti u poduzeću koje imaju zajednički cilj.\n\nDijele se na: nabavu, proizvodnju, prodaju, marketing, financije, ljudske resurse i IT."
+        },
+        {
+          "id": "q11",
+          "pitanje": "Ključne poslovne funkcije i odnosi (faze poslovnog ciklusa poduzeća) + SKICA",
+          "odgovor": "Funkcije prate tijek poslovanja i povezane su međusobno:\n• Nabava osigurava sirovine\n• Proizvodnja pretvara ih u proizvode\n• Prodaja prodaje proizvode\n• Logistika upravlja distribucijom\n• Financije prate novčane tokove\n\nIzlaz jedne funkcije postaje ulaz druge.\n\nSkica (tijek vrijednosti i potporne funkcije):\n\n    Nabava ──────► Proizvodnja ──────► Prodaja ──────► Kupac\n       │                 │                  │\n       ▼                 ▼                  ▼\n   Logistika         Financije          Marketing\n       └─────────────────┴──────────────────┘\n                 potpora cijelom lancu"
+        },
+        {
+          "id": "q12",
+          "pitanje": "Trajna poslovna imovina i logistika",
+          "odgovor": "Trajna poslovna imovina — dugotrajna sredstva koja se koriste više godina (npr. zgrade, strojevi).\n\nLogistika — upravljanje protokom robe, informacija i resursa od nabave do kupca."
+        },
+        {
+          "id": "q13",
+          "pitanje": "Što je integralni informacijski sustav?",
+          "odgovor": "Sustav koji povezuje sve poslovne funkcije u jednu cjelinu i omogućuje razmjenu podataka u realnom vremenu."
+        },
+        {
+          "id": "q14",
+          "pitanje": "Što je ERP / CRM / BI i osnovna obilježja i izazovi?",
+          "odgovor": "ERP — sustav za upravljanje resursima poduzeća\nCRM — upravljanje odnosima s kupcima\nBI — analiza podataka za donošenje odluka\n\nObilježja:\n• integracija podataka\n• automatizacija procesa\n• centralizirana baza\n\nIzazovi:\n• visoki troškovi\n• složena implementacija\n• potreba za edukacijom zaposlenika"
+        },
+        {
+          "id": "q15",
+          "pitanje": "Objasnite modularni pristup pri arhitekturi i implementaciji ERP sustava.",
+          "odgovor": "ERP sustav se sastoji od modula (npr. financije, HR). Svaki modul pokriva jednu funkciju i može se uvoditi postupno, što olakšava implementaciju."
+        },
+        {
+          "id": "q16",
+          "pitanje": "Objasnite tipične CRM module i tri osnovna tipa CRM sustava",
+          "odgovor": "Moduli:\n• prodaja\n• marketing\n• korisnička podrška\n\nTipovi CRM-a:\n• operativni (rad s kupcima)\n• analitički (analiza podataka)\n• kolaborativni (komunikacija s kupcima)"
+        },
+        {
+          "id": "q17",
+          "pitanje": "Objasnite Insightly / ZOHO / Microsoft pristup CRM-u.",
+          "odgovor": "Insightly — jednostavan i prilagođen malim poduzećima\nZoho — fleksibilan i cjenovno pristupačan\nMicrosoft Dynamics — napredno rješenje za velike sustave"
+        }
+      ]
+    },
+    {
+      "naslov": "3. POTPORA UPRAVLJANJU ODLUCIVANJU",
+      "stavke": [
+        {
+          "id": "q18",
+          "pitanje": "Objasnite Izvršni sloj informacijskog sustava.",
+          "odgovor": "To je operativni sloj koji podržava svakodnevne aktivnosti i obradu transakcija (TPS)."
+        },
+        {
+          "id": "q19",
+          "pitanje": "Objasnite pojam i karakteristike transakcije.",
+          "odgovor": "Transakcija je osnovna poslovna operacija (npr. kupnja).\n\nKarakteristike:\n• ima početak i kraj\n• mora biti točna i pouzdana\n• evidentira se u sustavu"
+        },
+        {
+          "id": "q20",
+          "pitanje": "Objasnite Upravljački / Suradnički sloj informacijskog sustava.",
+          "odgovor": "Upravljački sloj — služi za planiranje, kontrolu i donošenje odluka (MIS).\n\nSuradnički sloj — omogućuje komunikaciju i timski rad (npr. e-mail, kolaboracijski alati)."
+        },
+        {
+          "id": "q21",
+          "pitanje": "Na praktičnom IT primjeru prikažite proces donošenja odluka",
+          "odgovor": "Primjer: web trgovina\n• TPS bilježi narudžbe\n• MIS generira izvještaje o prodaji\n• DSS analizira trendove\n• menadžment odlučuje koje proizvode promovirati"
+        },
+        {
+          "id": "q22",
+          "pitanje": "Navedite i objasnite informacijske sustave potpore upravljanju i odlučivanju.",
+          "odgovor": "MIS — izvještaji za menadžere\nDSS — pomoć pri donošenju odluka\nESS — strateške odluke"
+        },
+        {
+          "id": "q23",
+          "pitanje": "Objasnite odnos informacijskih sustava potpore upravljanju i odlučivanju + SKICA",
+          "odgovor": "Sustavi su povezani hijerarhijski: ESS (strateška razina) koristi sažetke za strateške odluke; DSS analizira podatke i pomaže u donošenju odluka; MIS koristi podatke za izradu izvještaja; TPS prikuplja i obrađuje osnovne podatke. Podaci se prenose s niže na višu razinu.\n\nInformacijski sustavi potpore upravljanju i odlučivanju povezani su hijerarhijski tako da TPS osigurava podatke, MIS izvještaje, DSS analize, a ESS strateške informacije za vrhovni menadžment.\n\nBit odnosa:\n• podaci idu odozdo prema gore\n• razina odlučivanja ide od operativne do strateške\n• sustavi se nadovezuju jedan na drugi\n\nSkica (hijerarhija slojeva — podaci prema gore):\n\n   ┌────────────────────────────────────────┐\n   │ ESS — strateške odluke / sažeci        │\n   └───────────────────┬────────────────────┘\n                       │ agregirani podaci ↑\n   ┌───────────────────▼────────────────────┐\n   │ DSS — analize, scenariji                 │\n   └───────────────────┬────────────────────┘\n                       │ strukturirani uvidi ↑\n   ┌───────────────────▼────────────────────┐\n   │ MIS — izvještaji za menadžment         │\n   └───────────────────┬────────────────────┘\n                       │ obrađeni podaci ↑\n   ┌───────────────────▼────────────────────┐\n   │ TPS — transakcije / operativa          │\n   └────────────────────────────────────────┘"
+        },
+        {
+          "id": "q24",
+          "pitanje": "Objasnite TPS / MIS / DSS / ESS",
+          "odgovor": "TPS (Transaction Processing System)\n→ sustav za obradu transakacija; koristi se na operativnoj razini za svakodnevne aktivnosti (npr. narudžbe, računi); osigurava točnost i bilježenje podataka.\n\nMIS (Management Information System)\n→ upravljački informacijski sustav; pretvara podatke iz TPS-a u izvještaje za menadžere; koristi se za planiranje i kontrolu poslovanja.\n\nDSS (Decision Support System)\n→ sustav za potporu odlučivanju; pomaže pri donošenju složenijih odluka analizom podataka i scenarija; koristi se za polustrukturirane odluke.\n\nESS (Executive Support System)\n→ sustav za potporu vrhovnom menadžmentu; koristi sažetke i strateške informacije za donošenje dugoročnih odluka; namijenjen je vrhu organizacije."
+        },
+        {
+          "id": "q25",
+          "pitanje": "Navedite i objasnite informacijske sustave automatizacije i znanja",
+          "odgovor": "To su sustavi koji pomažu radu i učenju:\n• uredski sustavi\n• ekspertni sustavi\n• AI sustavi"
+        },
+        {
+          "id": "q26",
+          "pitanje": "Skicirajte međusobni odnos informacijskih sustava",
+          "odgovor": "Svi sustavi su povezani i razmjenjuju podatke; operativni sustavi opskrbljuju upravljačke i strateške.\n\nSkica (tok između slojeva):\n\n   ┌──────────────┐      ┌────────────────────┐      ┌──────────────┐\n   │ Operativni   │ ──►  │ Upravljački        │ ──►  │ Strateški    │\n   │ (npr. TPS)   │      │ (MIS / DSS …)      │      │ (ESS …)      │\n   └──────┬───────┘      └─────────┬──────────┘      └──────┬───────┘\n          ▲                          │                       │\n          └──────────────────────────┴───────────────────────┘\n              povratne informacije / podaci (u praksi često u oba smjera)"
+        }
+      ]
+    },
+    {
+      "naslov": "4. POTPORA POSLOVNIM FUNKCIJAMA PRIMJER UVOĐENJA",
+      "stavke": [
+        {
+          "id": "q27",
+          "pitanje": "Objasnite faze životnog ciklusa poslovnog informacijskog sustava",
+          "odgovor": "Planiranje\nAnaliza\nDizajn\nImplementacija\nOdržavanje"
+        },
+        {
+          "id": "q28",
+          "pitanje": "Krivulja životnog ciklusa IS-a + SKICA",
+          "odgovor": "Uvođenje (početak) — sustav se razvija i uvodi u rad; troškovi su visoki, a koristi još male jer korisnici tek počinju koristiti sustav.\n\nRast — korisnici sve više koriste sustav, učinkovitost raste, a koristi postaju vidljive; sustav se stabilizira i ispravljaju se početne greške.\n\nZrelost (vrhunac) — sustav radi optimalno i daje najveću vrijednost poduzeću; procesi su uhodani, a performanse stabilne.\n\nPad (zastarijevanje) — tehnologija zastarijeva, pojavljuju se novi zahtjevi i problemi; sustav postaje manje učinkovit i skuplji za održavanje.\n\nSkica (krivulja koristi kroz faze — pojednostavljeno):\n\n  Koristi / vrijednost\n    ^\n    │                              .───────────────.\n    │                          .───               ───.\n    │                      .───        Rast             ───.\n    │                  .───                                  ───.  Pad\n    │              .───\n    │          .───   Uvođenje (koristi rastu sporo)\n    │      .───\n    │  .───\n    └──┴────────────────────────────────────────────────────────► Vrijeme\n\n  • maksimum = zrelost\n  • pad = zastarijevanje\n  • točka infleksije = početak pada"
+        },
+        {
+          "id": "q29",
+          "pitanje": "Što predstavlja točka infleksije?",
+          "odgovor": "To je trenutak kada sustav počinje gubiti učinkovitost i potrebno ga je nadograditi ili zamijeniti."
+        },
+        {
+          "id": "q30",
+          "pitanje": "Hijerarhijska struktura poslovnog informacijskog sustava + SKICA",
+          "odgovor": "IS je organiziran hijerarhijski:\n• Sustav — cjelokupni poslovni informacijski sustav poduzeća\n• Podsustavi — dijelovi sustava koji pokrivaju pojedine poslovne funkcije (npr. financije, prodaja, nabava)\n• Moduli — manji dijelovi unutar podsustava koji obavljaju specifične zadatke\n• Komponente — najmanji dijelovi sustava (programi, baze podataka, elementi)\n\nSkica (od cjeline prema detalju):\n\n                      ┌──────────┐\n                      │  SUSTAV  │\n                      └─────┬────┘\n           ┌────────────────┼────────────────┐\n           ▼                ▼                ▼\n    ┌────────────┐   ┌────────────┐   ┌────────────┐\n    │ Podsustav  │   │ Podsustav  │   │ Podsustav  │\n    │ (financije)│   │ (prodaja)  │   │ (nabava …) │\n    └──────┬─────┘   └────────────┘   └────────────┘\n           │\n           ▼\n    ┌────────────┐\n    │   MODUL    │\n    └──────┬─────┘\n           │\n           ▼\n    ┌────────────┐\n    │ Komponente │  (programi, baze, sučelja …)\n    └────────────┘"
+        },
+        {
+          "id": "q31",
+          "pitanje": "Objasnite pojam Informacijski podsustav.",
+          "odgovor": "To je dio informacijskog sustava koji pokriva jednu poslovnu funkciju (npr. financijski podsustav)."
+        },
+        {
+          "id": "q32",
+          "pitanje": "Navedite i objasnite standardne informacijske podsustave.",
+          "odgovor": "Financijski podsustav — prati financijsko poslovanje poduzeća: prihode, rashode, troškove, obračun plaća i izradu financijskih izvještaja; omogućuje kontrolu i planiranje financija.\n\nKadrovski (HR) podsustav — upravlja zaposlenicima: evidencija zaposlenih, zapošljavanje, obračun plaća, edukacija i razvoj kadrova.\n\nNabavni podsustav — podržava procese nabave: odabir dobavljača, naručivanje robe i praćenje isporuka; osigurava dostupnost potrebnih resursa.\n\nProizvodni podsustav — planira i prati proizvodnju: upravlja materijalima, radnim nalozima i proizvodnim procesima.\n\nProdajni podsustav — upravlja prodajom proizvoda ili usluga: zaprimanje narudžbi, izdavanje računa, praćenje kupaca i prodajnih rezultata.\n\nSkladišno logistički podsustav — prati stanje zaliha, skladištenje i distribuciju robe; osigurava pravovremenu isporuku kupcima.\n\nMarketinški podsustav — istraživanje tržišta, promocije, analizu kupaca i planiranje kampanja."
+        }
+      ]
+    },
+    {
+      "naslov": "5. UPRAVLJANJE PROMJENAMA (ITIL)",
+      "stavke": [
+        {
+          "id": "q33",
+          "pitanje": "Zašto je važno upravljati promjenama?",
+          "odgovor": "Zato što su promjene neizbježne, a upravljanjem smanjujemo rizik, probleme i kaos u sustavu."
+        },
+        {
+          "id": "q34",
+          "pitanje": "Koji je prvi korak procesa upravljanja promjenama?",
+          "odgovor": "Klasifikacija promjena."
+        },
+        {
+          "id": "q35",
+          "pitanje": "Koji tipovi zahtjeva za promjenom postoje?",
+          "odgovor": "Standardne, manje (minor), veće (major), značajne (significant) i hitne (emergency)."
+        },
+        {
+          "id": "q36",
+          "pitanje": "Kako upravljamo standardnim zahtjevima za promjenama?",
+          "odgovor": "Već su unaprijed odobrene i idu direktno na CAB (Odbor za promjene)."
+        },
+        {
+          "id": "q37",
+          "pitanje": "Kako izgleda proces analize zahtjeva za promjenom?",
+          "odgovor": "Prvo klasifikacija, zatim analiza, odobrenje (Change Manager ili CAB), pa planiranje i provedba uz procjenu rizika."
+        },
+        {
+          "id": "q38",
+          "pitanje": "Za koje tipove promjena Change Manager odobrava i određuje vrijeme?",
+          "odgovor": "Za manje (minor) promjene."
+        },
+        {
+          "id": "q39",
+          "pitanje": "Koja je uloga CAB-a?",
+          "odgovor": "Analizira promjene, procjenjuje rizike i odlučuje hoće li se promjena provesti."
+        },
+        {
+          "id": "q40",
+          "pitanje": "Što je potrebno napraviti kod implementacije promjena?",
+          "odgovor": "Provesti promjenu prema planu i educirati korisnike."
+        },
+        {
+          "id": "q41",
+          "pitanje": "Koji je zadnji korak procesa?",
+          "odgovor": "Analiza nakon provedbe (Post Implementation Review) i zatvaranje promjene."
+        }
+      ]
+    },
+    {
+      "naslov": "6. DOKUMENTI U POSLOVANJU",
+      "stavke": [
+        {
+          "id": "q42",
+          "pitanje": "Koji su ulazni skladišni dokumenti?",
+          "odgovor": "Primka, primka-kalkulacija, povratnica dobavljaču, inventurni višak, ulazna međuskladišnica."
+        },
+        {
+          "id": "q43",
+          "pitanje": "Koji su izlazni skladišni dokumenti?",
+          "odgovor": "Otpremnica, povratnica kupca, izdatnica, interna povratnica, inventurni manjak, izlazna međuskladišnica."
+        },
+        {
+          "id": "q44",
+          "pitanje": "Koji su ulazni financijski dokumenti?",
+          "odgovor": "Račun (ulazni), račun-otpremnica, knjižna obavijest."
+        },
+        {
+          "id": "q45",
+          "pitanje": "Koji su izlazni financijski dokumenti?",
+          "odgovor": "Račun (izlazni), račun-otpremnica, knjižna obavijest."
+        },
+        {
+          "id": "q46",
+          "pitanje": "Što je ulazni/izlazni račun?",
+          "odgovor": "Dokument koji stvara financijsku obvezu (ulazni) ili potraživanje (izlazni)."
+        },
+        {
+          "id": "q47",
+          "pitanje": "Što je račun-otpremnica?",
+          "odgovor": "Dokument koji sadrži i financijske i skladišne podatke."
+        },
+        {
+          "id": "q48",
+          "pitanje": "Što je knjižna obavijest?",
+          "odgovor": "Dokument za djelomično ispravljanje računa."
+        },
+        {
+          "id": "q49",
+          "pitanje": "Koja je razlika između primke i primke-kalkulacije?",
+          "odgovor": "Primka služi za zaprimanje robe, a primka-kalkulacija i za određivanje prodajne cijene."
+        },
+        {
+          "id": "q50",
+          "pitanje": "Što je otpremnica, a što izdatnica?",
+          "odgovor": "Otpremnica — roba ide kupcu.\nIzdatnica — roba ide unutar firme."
+        },
+        {
+          "id": "q51",
+          "pitanje": "Koja je razlika između povratnice dobavljaču i povratnice kupca?",
+          "odgovor": "Dobavljaču — vraćamo robu dobavljaču.\nKupca — kupac vraća robu nama."
+        },
+        {
+          "id": "q52",
+          "pitanje": "Što je inventurni višak i manjak?",
+          "odgovor": "Višak — više robe nego u evidenciji.\nManjak — manje robe nego u evidenciji."
+        },
+        {
+          "id": "q53",
+          "pitanje": "Što je međuskladišnica?",
+          "odgovor": "Prijenos robe između skladišta unutar firme."
+        },
+        {
+          "id": "q54",
+          "pitanje": "Što je storno dokumenata?",
+          "odgovor": "Poništavanje dokumenta bez brisanja (zbog evidencije)."
+        },
+        {
+          "id": "q55",
+          "pitanje": "Kada se storno mora koristiti umjesto brisanja?",
+          "odgovor": "Kada već postoji financijska evidencija ili je važna povijest dokumenata."
+        }
+      ]
+    },
+    {
+      "naslov": "7. DIGITALNI CERTIFIKATI I E-POTPIS",
+      "stavke": [
+        {
+          "id": "q56",
+          "pitanje": "Što je digitalni certifikat?",
+          "odgovor": "Elektronički dokument koji potvrđuje identitet na internetu."
+        },
+        {
+          "id": "q57",
+          "pitanje": "Što sadrži digitalni certifikat?",
+          "odgovor": "Podatke o vlasniku, javni ključ, izdavatelja i rok valjanosti."
+        },
+        {
+          "id": "q58",
+          "pitanje": "Kako se koriste digitalni certifikati?",
+          "odgovor": "Za sigurnu komunikaciju, enkripciju i identifikaciju."
+        },
+        {
+          "id": "q59",
+          "pitanje": "Koje vrste digitalnih certifikata postoje?",
+          "odgovor": "SSL/TLS, korisnički, kvalificirani, za e-potpis, za enkripciju, za kod, IoT i server/client."
+        },
+        {
+          "id": "q60",
+          "pitanje": "Koji certifikati imaju pravnu valjanost?",
+          "odgovor": "Kvalificirani digitalni certifikati."
+        },
+        {
+          "id": "q61",
+          "pitanje": "Što su SSL/TLS certifikati?",
+          "odgovor": "Certifikati za sigurnu komunikaciju između web stranice i korisnika."
+        },
+        {
+          "id": "q62",
+          "pitanje": "Koje su podvrste SSL/TLS certifikata?",
+          "odgovor": "DV, OV i EV."
+        },
+        {
+          "id": "q63",
+          "pitanje": "Čemu služe korisnički certifikati?",
+          "odgovor": "Za identifikaciju korisnika i pristup e-uslugama."
+        },
+        {
+          "id": "q64",
+          "pitanje": "Čemu služe kvalificirani certifikati?",
+          "odgovor": "Za pravno valjano digitalno potpisivanje."
+        },
+        {
+          "id": "q65",
+          "pitanje": "Čemu služe certifikati za enkripciju?",
+          "odgovor": "Za šifriranje poruka i datoteka."
+        },
+        {
+          "id": "q66",
+          "pitanje": "Kako se izdaje digitalni certifikat?",
+          "odgovor": "Zahtjev → identifikacija → izdavanje → instalacija."
+        },
+        {
+          "id": "q67",
+          "pitanje": "Koja je razlika između privatnog i javnog ključa?",
+          "odgovor": "Privatni je tajan i služi za potpisivanje, javni za provjeru i šifriranje."
+        },
+        {
+          "id": "q68",
+          "pitanje": "Kako funkcionira digitalni certifikat (koraci)?",
+          "odgovor": "Generiranje ključeva → zahtjev → provjera → izdavanje → distribucija → korištenje → lanac povjerenja."
+        },
+        {
+          "id": "q69",
+          "pitanje": "Što je elektronički potpis?",
+          "odgovor": "Digitalni način potvrde identiteta i integriteta dokumenta."
+        },
+        {
+          "id": "q70",
+          "pitanje": "Gdje se koristi elektronički potpis?",
+          "odgovor": "U ugovorima, računima, e-uslugama i poslovnim sustavima."
+        },
+        {
+          "id": "q71",
+          "pitanje": "Koje vrste e-potpisa postoje (eIDAS)?",
+          "odgovor": "ES, AES i QES."
+        },
+        {
+          "id": "q72",
+          "pitanje": "Koji e-potpis ima punu pravnu snagu?",
+          "odgovor": "Kvalificirani elektronički potpis (QES)."
+        },
+        {
+          "id": "q73",
+          "pitanje": "Koje su prednosti e-potpisa?",
+          "odgovor": "Veća sigurnost, brži procesi i manje papira."
+        },
+        {
+          "id": "q74",
+          "pitanje": "Kako e-potpis funkcionira u praksi?",
+          "odgovor": "Izrada dokumenta → priprema → autentifikacija → potpis → završetak."
+        },
+        {
+          "id": "q75",
+          "pitanje": "Što je elektronički pečat?",
+          "odgovor": "Digitalni pečat tvrtke za potvrdu dokumenata."
+        },
+        {
+          "id": "q76",
+          "pitanje": "Gdje se koristi e-potpis (primjeri)?",
+          "odgovor": "Ugovori, fakture, bankarski dokumenti, zdravstveni zapisi."
+        }
+      ]
+    }
+  ]
+}

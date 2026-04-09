@@ -1,5 +1,6 @@
 const STORAGE_KEY = "pis-library:v1";
 
+/** @typedef {{ naslov: string, stavke: unknown[] }} Poglavlje */
 /** @typedef {{ id: string, pitanje: string, odgovor: string, slika?: string, slikaAlt?: string, _search?: string }} QAItem */
 
 function clamp(n, min, max) {
@@ -67,6 +68,48 @@ function el(tag, attrs = {}, children = []) {
     node.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
   }
   return node;
+}
+
+/**
+ * Ako odgovor završava blokom "Skica ...:\n\nASCII", prikaži tekst i skicu odvojeno (čitljivije).
+ * @param {string} odgovor
+ * @returns {{ main: string, skicaLabel: string, skicaBody: string } | null}
+ */
+function parseSkicaBlock(odgovor) {
+  const m = odgovor.match(/\n\n(Skica[^\n]+)\n\n([\s\S]*)$/);
+  if (!m) return null;
+  return {
+    main: odgovor.slice(0, m.index).trimEnd(),
+    skicaLabel: m[1].trim(),
+    skicaBody: m[2].trimEnd(),
+  };
+}
+
+function buildAnswerInner(item) {
+  const inner = el("div", { class: "answer__inner" });
+  const parsed = parseSkicaBlock(item.odgovor);
+
+  if (parsed) {
+    inner.appendChild(el("div", { class: "answer__text" }, [parsed.main]));
+    const skWrap = el("div", { class: "answer__skicaWrap" });
+    skWrap.appendChild(el("div", { class: "answer__skicaLabel" }, [parsed.skicaLabel]));
+    skWrap.appendChild(el("pre", { class: "answer__skica" }, [parsed.skicaBody]));
+    inner.appendChild(skWrap);
+  } else {
+    inner.appendChild(el("div", { class: "answer__text" }, [item.odgovor]));
+  }
+
+  if (item.slika) {
+    const img = el("img", {
+      src: item.slika,
+      alt: String(item.slikaAlt ?? item.pitanje ?? "Skica"),
+      loading: "lazy",
+      decoding: "async",
+    });
+    inner.appendChild(el("div", { class: "answer__media" }, [img]));
+  }
+
+  return inner;
 }
 
 function makeChevron() {
@@ -146,20 +189,7 @@ function renderCard(item, state, onStateChange) {
 
   const header = el("div", { class: "card__header" }, [qbtn, controls]);
 
-  const answerInnerChildren = [item.odgovor];
-  if (item.slika) {
-    const img = el("img", {
-      src: item.slika,
-      alt: String(item.slikaAlt ?? item.pitanje ?? "Skica"),
-      loading: "lazy",
-      decoding: "async",
-    });
-    answerInnerChildren.push(el("div", { class: "answer__media" }, [img]));
-  }
-
-  const answer = el("div", { class: "answer", id: `ans-${item.id}` }, [
-    el("div", { class: "answer__inner" }, answerInnerChildren),
-  ]);
+  const answer = el("div", { class: "answer", id: `ans-${item.id}` }, [buildAnswerInner(item)]);
 
   function setOpen(nextOpen) {
     card.dataset.open = nextOpen ? "true" : "false";
@@ -176,22 +206,46 @@ function renderCard(item, state, onStateChange) {
   return card;
 }
 
+function normalizeItem(x) {
+  return {
+    id: String(x.id ?? ""),
+    pitanje: String(x.pitanje ?? ""),
+    odgovor: String(x.odgovor ?? ""),
+    slika: x.slika ? String(x.slika) : undefined,
+    slikaAlt: x.slikaAlt ? String(x.slikaAlt) : undefined,
+  };
+}
+
+/**
+ * @returns {Promise<{ poglavlja: Poglavlje[], allItems: QAItem[] }>}
+ */
 async function loadData() {
   const res = await fetch("./data.json", { cache: "no-store" });
   if (!res.ok) throw new Error(`Failed to load data.json (${res.status})`);
   const data = await res.json();
-  if (!Array.isArray(data)) return [];
-  return data
+
+  /** @type {Poglavlje[]} */
+  let poglavlja = [];
+  /** @type {unknown[]} */
+  let rawItems = [];
+
+  if (data && typeof data === "object" && Array.isArray(data.poglavlja)) {
+    poglavlja = data.poglavlja.filter((p) => p && typeof p === "object" && Array.isArray(p.stavke));
+    for (const p of poglavlja) {
+      for (const x of p.stavke) rawItems.push(x);
+    }
+  } else if (Array.isArray(data)) {
+    rawItems = data;
+    poglavlja = [{ naslov: "Pitanja", stavke: data }];
+  }
+
+  const allItems = rawItems
     .filter((x) => x && typeof x === "object")
-    .map((x) => ({
-      id: String(x.id ?? ""),
-      pitanje: String(x.pitanje ?? ""),
-      odgovor: String(x.odgovor ?? ""),
-      slika: x.slika ? String(x.slika) : undefined,
-      slikaAlt: x.slikaAlt ? String(x.slikaAlt) : undefined,
-    }))
+    .map((x) => normalizeItem(x))
     .filter((x) => x.id && x.pitanje)
     .map((x) => ({ ...x, _search: normalize(`${x.pitanje} ${x.odgovor}`) }));
+
+  return { poglavlja, allItems };
 }
 
 function updateMeta(resultsCountEl, count, total, query) {
@@ -221,6 +275,8 @@ function main() {
   const state = loadState();
   /** @type {QAItem[]} */
   let allItems = [];
+  /** @type {Poglavlje[]} */
+  let poglavlja = [];
   /** @type {Map<string, HTMLElement>} */
   const cardById = new Map();
   /** @type {string | null} */
@@ -232,13 +288,26 @@ function main() {
 
   function buildOnce() {
     cardById.clear();
-    const nodes = [];
-    for (const it of allItems) {
-      const node = renderCard(it, state, onStateChange);
-      cardById.set(it.id, node);
-      nodes.push(node);
+    cardsEl.replaceChildren();
+    const byId = new Map(allItems.map((it) => [it.id, it]));
+
+    for (const pog of poglavlja) {
+      const section = el("section", { class: "chapter" });
+      section.appendChild(el("h2", { class: "chapter__title" }, [`Poglavlje: ${pog.naslov}`]));
+      const inner = el("div", { class: "cards chapter__cards" });
+
+      for (const raw of pog.stavke) {
+        const id = String(raw?.id ?? "");
+        const item = byId.get(id);
+        if (!item) continue;
+        const node = renderCard(item, state, onStateChange);
+        cardById.set(item.id, node);
+        inner.appendChild(node);
+      }
+
+      section.appendChild(inner);
+      cardsEl.appendChild(section);
     }
-    cardsEl.replaceChildren(...nodes);
   }
 
   // Mark last-clicked question (visual cue on left chevron).
@@ -271,6 +340,13 @@ function main() {
       node.hidden = !match;
       if (match) visible += 1;
     }
+
+    for (const sec of cardsEl.querySelectorAll(".chapter")) {
+      const cards = [...sec.querySelectorAll(".card")];
+      const anyVisible = cards.length > 0 && cards.some((c) => !c.hidden);
+      sec.hidden = !anyVisible;
+    }
+
     updateMeta(resultsCountEl, visible, allItems.length, qRaw);
     updateEmptyState(emptyEl, emptySubtitleEl, visible, qRaw);
   }
@@ -290,12 +366,14 @@ function main() {
   });
 
   loadData()
-    .then((items) => {
+    .then(({ poglavlja: pg, allItems: items }) => {
+      poglavlja = pg;
       allItems = items;
       buildOnce();
       applySearchFilter();
     })
     .catch(() => {
+      poglavlja = [];
       allItems = [];
       buildOnce();
       applySearchFilter();

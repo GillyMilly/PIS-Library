@@ -187,8 +187,27 @@ body {
 }
 
 .card[data-checked="true"] {
-  background: rgba(255, 255, 255, 0.58);
-  border-color: rgba(47, 122, 82, 0.35);
+  background: linear-gradient(165deg, rgba(47, 122, 82, 0.11) 0%, rgba(255, 255, 255, 0.78) 42%, rgba(245, 250, 247, 0.95) 100%);
+  border-color: rgba(47, 122, 82, 0.22);
+  box-shadow:
+    0 0 0 1px rgba(47, 122, 82, 0.08),
+    0 10px 28px rgba(47, 122, 82, 0.14),
+    0 24px 56px rgba(29, 26, 20, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.card[data-checked="true"]:hover {
+  box-shadow:
+    0 0 0 1px rgba(47, 122, 82, 0.1),
+    0 12px 32px rgba(47, 122, 82, 0.17),
+    0 28px 64px rgba(29, 26, 20, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.card[data-checked="true"] .check {
+  background: rgba(47, 122, 82, 0.14);
+  border-color: rgba(47, 122, 82, 0.28);
+  box-shadow: 0 4px 16px rgba(47, 122, 82, 0.18), 0 10px 28px rgba(47, 122, 82, 0.1);
 }
 
 .card__header {
@@ -329,7 +348,7 @@ body {
 
 .card[data-open="true"] .answer {
   padding: 0 14px 14px;
-  max-height: 420px;
+  max-height: min(2400px, 92vh);
   opacity: 1;
 }
 
@@ -341,6 +360,63 @@ body {
   color: rgba(29, 26, 20, 0.86);
   line-height: 1.55;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer__text {
+  white-space: pre-line;
+}
+
+.answer__skicaWrap {
+  margin-top: 2px;
+}
+
+.answer__skicaLabel {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(29, 26, 20, 0.55);
+  margin-bottom: 8px;
+}
+
+.answer__skica {
+  margin: 0;
+  padding: 14px 16px;
+  font-family: ui-monospace, "Cascadia Mono", "Cascadia Code", Consolas, "SF Mono", Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(29, 26, 20, 0.88);
+  background: rgba(132, 98, 54, 0.06);
+  border: 1px solid rgba(132, 98, 54, 0.14);
+  border-radius: 12px;
+  overflow-x: auto;
+  tab-size: 4;
+  white-space: pre;
+}
+
+.chapter {
+  margin-bottom: 28px;
+}
+
+.chapter:last-child {
+  margin-bottom: 0;
+}
+
+.chapter__title {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: rgba(29, 26, 20, 0.88);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(29, 26, 20, 0.10);
+}
+
+.chapter__cards {
+  gap: 14px;
 }
 
 .answer__media {
